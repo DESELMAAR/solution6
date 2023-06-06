@@ -95,13 +95,13 @@ color: var(--Cyan);
 font-family: var(--font);
 }
 .icone-price{
-  height: 3.5vh;
+  height: 3vh;
 }
 .time-left{
   display: flex;
 }
 .icone.time{
-  height: 3.5vh;
+  height: 3vh;
 }
 .time{
   white-space: nowrap;
