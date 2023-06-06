@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* variables */
+:root{
+  /* ## Colors */
+
+/* ### Primary */
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--font: 'Outfit', sans-serif;
+}
+/* end variable set */
+
+body{
+  background-color: var(--Very-dark-blue-main-BG);
+  height: fit-content;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 4vh;
+  background-color: var(--Very-dark-blue-card-BG);
+  border-radius: 2vh;
+  margin:8vh auto;
+
+}
+/* image config and hover icone view */
+.image{
+  max-width: 100%;
+  height: 280px;
+  border-radius: 1vh;
+  margin-bottom: 3vh;
+  background-image:url(images/image-equilibrium.jpg) ;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  
+}
+.bg-image{
+  background-color: hsl(178, 100%, 50%,0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: grid;
+  place-items: center;
+  display: none;
+}
+.image:hover .bg-image{
+display: grid;
+}
+/* end image and hover config */
+
+.name-equilibrium{
+  font-family: var(--font);
+  font-size: 26px;
+  color: var(--White);
+  margin-bottom: 3vh;
+}
+.name-equilibrium:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.description-p{
+  font-size: 18px;
+  font-family: var(--font);
+  color: var(--Soft-blue);
+  margin-bottom: 3vh;
+}
+/* Line icone price   time  */
+.price-time{
+  display: flex;
+justify-content: space-between;
+margin-bottom: 3vh;
+}
+.icone-price{
+  display: flex;
+  
+}
+.price{
+margin-left: 1vh;
+color: var(--Cyan);
+font-family: var(--font);
+}
+.icone-price{
+  height: 3.5vh;
+}
+.time-left{
+  display: flex;
+}
+.icone.time{
+  height: 3.5vh;
+}
+.time{
+  white-space: nowrap;
+  margin-left: 1vh;
+  color: var(--Soft-blue);
+  font-family: var(--font);
+}
+.horizontal{
+border:0.01vh var(--Very-dark-blue-line) solid ;
+border-bottom: none;
+}
+/* footer */
+.info-creator{
+  display: flex;
+  place-items: center;
+  margin-top: 2vh;
+}
+.pic-creator{
+  width: 5vh;
+  border-radius: 10vh;
+  border: 1px var(--White) solid;
+}
+.name-creator{
+  margin-left: 3vh;
+  height: fit-content;
+  font-family: var(--font);
+  color: var(--Soft-blue);
+}
+.name-author{
+  color: var(--White);
+cursor: pointer;
+}
+.name-author:hover{
+  color: var(--Cyan);
+}
